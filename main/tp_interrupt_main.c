@@ -16,10 +16,12 @@
 #include "algorithm.h"
 #include "pump.h"
 #include "water_detector.h"
+#include "wifi.h"
 
 void app_main(void)
 {
     pump_init();
     water_detector_init();
+    wifi_init();
     algorithm_init();
 }
